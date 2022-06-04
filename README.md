@@ -11,7 +11,7 @@ Gcode-with-thumbnail-thumbnailer.py
 The python script that extracts and generates the required png file.
 
 gcode-with-thumbnail.thumbnailer
-Configuration file to associate *.code with the thumbnailer application.
+Configuration file to associate *.gcode with the thumbnailer application.
 
 Instiltion is manual:
 
