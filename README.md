@@ -26,4 +26,4 @@ This is also compatable with PrusaSlicer 2.4.2 inbult thumbnail generator.
 
 Examples:
 
-![Example at 2 * Zoom](https://github.com/ellensp/gcode-thumbnailer/blob/main/examples (2xZoom).png?raw=true)
+![Example at 2 * Zoom](https://github.com/ellensp/gcode-thumbnailer/blob/main/examples%20(2xZoom).png?raw=true)
