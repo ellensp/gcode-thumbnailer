@@ -21,3 +21,5 @@ Copy gcode-with-thumbnail-thumbnailer.py to somewhere in you path. For eg /usr/l
 How to add thumbnail to gcode:
 
 I used the method mentioned here https://github.com/mriscoc/Ender3V2S1/wiki/How-to-generate-a-gcode-preview
+
+This is also compatable with PrusaSlicer 2.4.2 inbult thumbnail generator.
