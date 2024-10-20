@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # gcode-with-thumbnail-thumbnailer.py - A Gnome 3 thumbnailer for gcode with an embedded thumbnail
 #
@@ -23,8 +23,7 @@
 
 import sys
 import re
-import os
-import base64 
+import base64
 import io
 import subprocess
 
@@ -47,9 +46,6 @@ def make_thumbnail(inputname, outputname, size=0):
         f.close()
 
         thumb_expresion = '; thumbnail begin.*?\n((.|\n)*?); thumbnail end'
-        size_expresion = '; thumbnail begin [0-9]+x[0-9]+ [0-9]+'
-        size_expresion_group = '; thumbnail begin [0-9]+x[0-9]+ ([0-9]+)'
-
         thumb_matches = re.findall(thumb_expresion, lines)
 
         if not thumb_matches:
@@ -79,7 +75,7 @@ def make_thumbnail(inputname, outputname, size=0):
         else:
             scaled = pixbuf
 
-        scaled.save(outputname)
+        scaled.save(outputname,'png')
 
     except GLib.GError as e:
         sys.stderr.write("%s:%d: %s\n" % (e.domain, e.code, e))
