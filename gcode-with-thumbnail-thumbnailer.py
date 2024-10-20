@@ -75,7 +75,7 @@ def make_thumbnail(inputname, outputname, size=0):
                     width  = width * size / height
                     height = size
 
-            scaled = pixbuf.resize((int(width),int(height)), Image.ANTIALIAS)
+            scaled = pixbuf.resize((int(width),int(height)), Image.LANCZOS)
         else:
             scaled = pixbuf
 
